@@ -18,7 +18,7 @@ FROM elasticsearch:2.3
 
 RUN /usr/share/elasticsearch/bin/plugin install mobz/elasticsearch-head
 
-ADD ./es_templates /es_templates
+#ADD ./es_templates /es_templates
 
 COPY ./wait-for-it.sh /
 RUN chmod 755 /wait-for-it.sh
